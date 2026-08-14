@@ -48,8 +48,16 @@ def encode_char(ch, stoi):
     return stoi[ch]
     pass
 
-# Step 5 - encode_string (not yet solved)
-# TODO: implement
+# Step 5 - encode_string
+def encode_string(text, stoi):
+    """Encode a full string into a list of token ids using stoi."""
+    # TODO: map each char in text through stoi (via encode_char) into a list of ids
+    encoded_string=list()
+    for ch in text:
+        encoded_string.append(encode_char(ch,stoi))
+
+    return encoded_string
+    pass
 
 # Step 6 - decode_int (not yet solved)
 # TODO: implement
