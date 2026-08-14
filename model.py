@@ -14,7 +14,6 @@ def build_vocab(text):
     for ch in text:
         vocab.add(ch)
 
-    vocab=list(vocab)
     vocab=sorted(vocab)
 
     return vocab
