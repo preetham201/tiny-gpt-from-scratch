@@ -19,8 +19,16 @@ def build_vocab(text):
     return vocab
     pass
 
-# Step 2 - build_stoi (not yet solved)
-# TODO: implement
+# Step 2 - build_stoi
+def build_stoi(vocab):
+    """Return a dict mapping each character in vocab to its index."""
+    # TODO: map each character in vocab to its integer position
+    vocab_stoi=dict()
+    for num,ch in enumerate(vocab):
+        vocab_stoi[ch]=num
+
+    return vocab_stoi
+    pass
 
 # Step 3 - build_itos (not yet solved)
 # TODO: implement
